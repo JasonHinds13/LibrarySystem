@@ -7,14 +7,14 @@ class Book
 {
 private:
 
-    int ISBN; //The ISBN Of The Book
+    string ISBN; //The ISBN Of The Book
     string name; //The Name Of The Book
     string author; //The Author Of The Book
     string publisher; //The Publisher Of The Book
 
 public:
 
-    void setISBN(int isbn)
+    void setISBN(string isbn)
     {
         ISBN = isbn;
     }
@@ -34,7 +34,7 @@ public:
         publisher = pub;
     }
 
-    int getISBN()
+    string getISBN()
     {
         return ISBN;
     }
@@ -99,10 +99,10 @@ public:
 
 
 //functions
-Book makeBook(int ISBN, string name, string author, string publisher);
+Book makeBook(string ISBN, string name, string author, string publisher);
 Student makeStudent(string name, string Class, Book book);
 
-Book makeBook(int ISBN, string name, string author, string publisher)
+Book makeBook(string ISBN, string name, string author, string publisher)
 {
     Book newbook;
 
