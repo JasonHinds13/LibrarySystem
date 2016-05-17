@@ -3,7 +3,7 @@
 
 int main(int argc, char**argv)
 {
-    Book book = makeBook(1220, "Adventures", "Matthew", "Penguin");
+    Book book = makeBook("1220", "Adventures", "Matthew", "Penguin");
     Student student = makeStudent("Adrian", "5T", book);
 
     cout<<"\t\t\tBook Details\n";
