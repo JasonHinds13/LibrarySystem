@@ -97,8 +97,7 @@ public:
     }
 };
 
-
-//functions
+//functions declaration
 Book makeBook(string ISBN, string name, string author, string publisher);
 Student makeStudent(string name, string Class, Book book);
 
