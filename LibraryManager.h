@@ -1,4 +1,5 @@
 #include <string>
+#include <vector>
 #include <sstream>
 #include <fstream>
 #include "LibrarySystem.h"
@@ -86,24 +87,38 @@ void readFromFile()
     string line;
     ifstream infile("Loan-Manager.txt");
 
+    string sName, sClass, bISBN, bName, auth, pub;
+
     if(infile)
     {
         while(getline(infile,line))
         {
-            string sName, sClass;
-            string bISBN, bName, auth, pub;
+            vector<string> tokens;
 
             istringstream ss(line);
 
-            ss >> sName >> sClass >> bISBN >> bName >> auth >> pub;
-
-            if (sName.compare("") != 0 || sName.compare(" ") != 0)
+            while(ss)
             {
-                Book bk = makeBook(bISBN,bName,auth,pub);
-                addStudent(makeStudent(sName,sClass,bk));
+                string word;
 
-                size_s++;
+                if (!getline(ss, word, ',')) break;
+                tokens.push_back(word);
             }
+
+            sName  = tokens.at(0);
+            sClass = tokens.at(1);
+            bISBN  = tokens.at(2);
+            bName  = tokens.at(3);
+            auth   = tokens.at(4);
+            pub    = tokens.at(5);
+
+            Book bk = makeBook(bISBN,bName,auth,pub);
+            addStudent(makeStudent(sName,sClass,bk));
+
+            size_s++;
+
         }
     }
+
+    infile.close();
 }
