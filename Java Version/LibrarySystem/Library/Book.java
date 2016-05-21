@@ -76,7 +76,7 @@ public class Book
         String message = "";
         
         message += "ISBN: "+ISBN+"\n";
-        message += "Name: "+name+"\n";
+        message += "Book: "+name+"\n";
         message += "Author: "+author+"\n";
         message += "Publisher: "+publisher;
         
