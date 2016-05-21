@@ -70,6 +70,12 @@ public class AddPanel extends JPanel
                Book bk = new Book(t3.getText(),t4.getText(),t5.getText(),t6.getText());
                manager.addStudent(new Student(t1.getText(),t2.getText(),bk));
                
+               t1.setText("");
+               t2.setText("");
+               t3.setText("");
+               t4.setText("");
+               t5.setText("");
+               t6.setText("");
                status.setText("Status: Student Added");
            }
            
