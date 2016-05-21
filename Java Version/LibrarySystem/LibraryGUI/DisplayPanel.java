@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class DisplayPanel extends JPanel
 {
-   private JTextField tf = new JTextField();
+   private JTextArea tf = new JTextArea();
    private JButton refresh = new JButton("Refresh");
    
    private Manager manager = LibraryGUI.manager;
