@@ -39,7 +39,7 @@ public class DisplayPanel extends JPanel
                {
                     message += "---------------------------\n";
                     message += student.toString();
-                    message += "---------------------------\n";
+                    message += "\n---------------------------\n";
                }
                 
                tf.setText(message);
