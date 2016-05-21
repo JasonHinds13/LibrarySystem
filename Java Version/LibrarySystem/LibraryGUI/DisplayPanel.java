@@ -8,6 +8,7 @@ import java.awt.event.*;
 public class DisplayPanel extends JPanel
 {
    private JTextArea tf = new JTextArea();
+   private JScrollPane scroll = new JScrollPane(tf);
    private JButton refresh = new JButton("Refresh");
    
    private Manager manager = LibraryGUI.manager;
@@ -22,7 +23,7 @@ public class DisplayPanel extends JPanel
       
       refresh.addActionListener(new ButtonListener());
 
-      add (tf, BorderLayout.CENTER);
+      add (scroll, BorderLayout.CENTER);
       add (b2, BorderLayout.NORTH);
       add (refresh, BorderLayout.SOUTH);
    }
