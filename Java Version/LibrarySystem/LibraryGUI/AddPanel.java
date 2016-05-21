@@ -63,8 +63,6 @@ public class AddPanel extends JPanel
    {
        public void actionPerformed(ActionEvent event)
        {
-           System.out.println(event.getSource());
-           
            if(event.getSource() == addBtn)
            {
                Book bk = new Book(t3.getText(),t4.getText(),t5.getText(),t6.getText());
