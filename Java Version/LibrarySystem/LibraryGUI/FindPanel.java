@@ -61,7 +61,7 @@ public class FindPanel extends JPanel
                Student found = manager.findStudent(tf.getText());
                
                sName.setText("Student Name: "+found.getName());
-               sClass.setText("Student Class: "+found.getClass());
+               sClass.setText("Student Class: "+found.getSClass());
                bISBN.setText("Book ISBN: "+found.getBook().getISBN());
                bName.setText("Book Name: "+found.getBook().getName());
                bAuth.setText("Book Author: "+found.getBook().getAuthor());
