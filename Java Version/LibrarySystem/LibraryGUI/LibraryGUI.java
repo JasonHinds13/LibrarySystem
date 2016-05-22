@@ -17,6 +17,7 @@ public class LibraryGUI
       JTabbedPane tp = new JTabbedPane();
       tp.addTab ("Add", new AddPanel());
       tp.addTab ("Find", new FindPanel());
+      tp.addTab ("Update", new UpdatePanel());
       tp.addTab ("Remove", new RemovePanel());
       tp.addTab ("Display", new DisplayPanel());
 
