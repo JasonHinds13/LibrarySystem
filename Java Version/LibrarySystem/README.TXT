@@ -9,4 +9,4 @@ PURPOSE OF PROJECT:
 VERSION or DATE: 1.1
 HOW TO START THIS PROJECT:
 AUTHORS: Brandon Hinds
-USER INSTRUCTIONS:
+USER INSTRUCTIONS: The Library folder may need to be copied to the LibraryGUI folder for the GUI to work.
